@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     public GameObject damPopUp;
     public LosePanel losePanel;
 
+    public Weapon currentWeapon;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -83,5 +85,9 @@ public class Player : MonoBehaviour
         {
             losePanel.Show();
         }
+    }
+    public void PickUpItem(Weapon newWeapon)
+    {
+        currentWeapon = newWeapon;  
     }
 }

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1926085311155766293}
   - component: {fileID: 1926085311155766295}
   - component: {fileID: 1926085311155766297}
+  - component: {fileID: 1522084641351821755}
   m_Layer: 0
   m_Name: Enemy_03
   m_TagString: Enemy
@@ -171,6 +172,23 @@ MonoBehaviour:
   flashMaterial: {fileID: 2100000, guid: a2a2f231129ba494b9d6af6dbabd4f51, type: 2}
   duration: 0.125
   spriteRenderer: {fileID: 4398302326340471489}
+--- !u!114 &1522084641351821755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926085311155766288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7310f50dab625c439db973a5020f136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItemsPrefabs: {fileID: 6253009954112855137, guid: 7652fa679fa197a429756cb0208595d1, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: 5d14fc4fa282fdd46b6ff7ca8b45e4c8, type: 2}
+  - {fileID: 11400000, guid: d1343fa84ea3eeb419b54e4f002b61a5, type: 2}
+  - {fileID: 11400000, guid: 3addef2963a5cd6459c666ec03051fc1, type: 2}
 --- !u!1 &5084586819772066348
 GameObject:
   m_ObjectHideFlags: 0

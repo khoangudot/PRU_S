@@ -39,6 +39,9 @@ public class Health : MonoBehaviour
                    
                     FindObjectOfType<Killed>().UpdateKilled();
                     FindObjectOfType<PlayerExp>().UpdateExperience(UnityEngine.Random.Range(1, 4));
+
+                    GetComponent<LootBag>().InstantiateLoot(transform.position);
+
                     Destroy(this.gameObject, 0.125f);
                 }
                 isDead = true;

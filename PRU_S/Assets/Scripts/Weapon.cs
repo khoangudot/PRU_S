@@ -5,7 +5,8 @@ public class Weapon : MonoBehaviour
     public GameObject bullet;
     public Transform firePos;
     public GameObject muzzle;
-
+    public int dropChance;
+    public Sprite weaponSprite;
 
     public float TimeBtwFire = 0.2f;
     public float bulletForce;
@@ -49,4 +50,5 @@ public class Weapon : MonoBehaviour
         rb.AddForce(transform.right * bulletForce, ForceMode2D.Impulse);
 
     }
+   
 }

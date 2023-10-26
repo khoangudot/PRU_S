@@ -15,6 +15,7 @@ public class Killed : MonoBehaviour
 
     public void UpdateKilled()
     {
+        
         currentKilled++;
         text.text = currentKilled.ToString();
     }
